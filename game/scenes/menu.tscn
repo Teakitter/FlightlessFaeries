@@ -73,10 +73,12 @@ text = "Play"
 
 [node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+disabled = true
 text = "Options"
 
 [node name="Statistics" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+disabled = true
 text = "Statistics"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
