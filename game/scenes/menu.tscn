@@ -7,7 +7,7 @@
 script/source = "extends Control
 
 func _on_play_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file(\"res://scenes/world.tscn\")
 
 
 func _on_options_pressed():
@@ -19,7 +19,7 @@ func _on_statistics_pressed():
 
 
 func _on_quit_pressed():
-	pass # Replace with function body.
+	get_tree().quit()
 "
 
 [sub_resource type="LabelSettings" id="LabelSettings_iuh6d"]
@@ -27,7 +27,7 @@ font = ExtResource("1_7g0fr")
 font_size = 200
 font_color = Color(0.321569, 0.592157, 0.521569, 1)
 outline_size = 30
-outline_color = Color(0.180392, 0.443137, 0.435294, 1)
+outline_color = Color(0.0235294, 0.231373, 0.219608, 1)
 
 [node name="Menu" type="Control"]
 layout_mode = 3
