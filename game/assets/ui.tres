@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ct5d25lndt33e"]
+
+[ext_resource type="FontFile" uid="uid://f77brr674fgy" path="res://assets/font/Alphakind.ttf" id="1_vw5yp"]
+
+[resource]
+default_font = ExtResource("1_vw5yp")
+default_font_size = 100
