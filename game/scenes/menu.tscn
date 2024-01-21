@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cyogwhvrnunm2"]
+[gd_scene load_steps=6 format=3 uid="uid://cyogwhvrnunm2"]
 
 [ext_resource type="FontFile" uid="uid://f77brr674fgy" path="res://assets/font/Alphakind.ttf" id="1_7g0fr"]
 [ext_resource type="Theme" uid="uid://ct5d25lndt33e" path="res://assets/ui.tres" id="2_a8jdk"]
+[ext_resource type="AudioStream" uid="uid://bnqux0ufq0kv4" path="res://assets/music/Enchanted Journey.mp3" id="3_fb5fv"]
 
 [sub_resource type="GDScript" id="GDScript_hyc8s"]
 script/source = "extends Control
@@ -84,6 +85,11 @@ text = "Statistics"
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_fb5fv")
+volume_db = -12.037
+autoplay = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
