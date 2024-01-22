@@ -1,0 +1,12 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dyj8hj38cjxyd"]
+
+[ext_resource type="FontFile" uid="uid://f77brr674fgy" path="res://assets/font/Alphakind.ttf" id="1_r38m4"]
+
+[resource]
+font = ExtResource("1_r38m4")
+font_size = 75
+font_color = Color(0.835294, 0.376471, 0.65098, 1)
+outline_size = 33
+shadow_size = 33
+shadow_color = Color(0.411765, 0.207843, 0.556863, 0.964706)
+shadow_offset = Vector2(1, 10)
