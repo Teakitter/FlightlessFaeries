@@ -6,6 +6,11 @@
 
 [node name="Background" type="ParallaxBackground"]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1921.0
+offset_bottom = 1073.0
+color = Color(0.305882, 0.478431, 0.419608, 1)
+
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.8, 1)
 motion_mirroring = Vector2(1920, 0)
