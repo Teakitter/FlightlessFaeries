@@ -1,11 +1,20 @@
 extends CharacterBody2D
 
-@export var SPEED = 400
+const GRAVITY : int = 4200
+const JUMP_SPEED : int = -1800
 
-func get_input():
-	var input_direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	velocity = input_direction * SPEED
+# Called every frame.
+func _physics_process(delta):
+	velocity.y += GRAVITY + delta
+	if is_on_floor():
+		if Input.is_action_pressed("jump"):
+			velocity.y = JUMP_SPEED
+			# $JumpSound.play()
+		#elif Input.is_action_pressed("duck"):
+			#$AnimatedSprite2D.play("duck")
+		#else:
+			#$AnimatedSprite2D.play("run")
+	#else:
+		#$animatedSprite2D.play("jump")
 	
-func _physics_process(_delta):
-	get_input()
 	move_and_slide()
