@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bahs5d3jopan3" path="res://scenes/floor.tscn" id="3_jn1ah"]
 [ext_resource type="PackedScene" uid="uid://c7hlq5amwtt01" path="res://scenes/background.tscn" id="3_ua0fx"]
 
-[node name="World" type="Node2D"]
+[node name="World" type="Node"]
 
 [node name="Floor" parent="." instance=ExtResource("3_jn1ah")]
 
