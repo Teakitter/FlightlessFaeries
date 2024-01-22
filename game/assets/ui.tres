@@ -1,7 +1,6 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ct5d25lndt33e"]
-
-[ext_resource type="FontFile" uid="uid://f77brr674fgy" path="res://assets/font/Alphakind.ttf" id="1_vw5yp"]
+[gd_resource type="Theme" format=3 uid="uid://blqg8t6k6o80a"]
 
 [resource]
-default_font = ExtResource("1_vw5yp")
-default_font_size = 100
+Button/colors/font_color = Color(0.835294, 0.376471, 0.65098, 1)
+Button/colors/font_disabled_color = Color(0.835294, 0.376471, 0.65098, 1)
+Button/colors/icon_disabled_color = Color(0.835294, 0.376471, 0.65098, 1)

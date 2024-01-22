@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyogwhvrnunm2"]
+[gd_scene load_steps=9 format=3 uid="uid://cyogwhvrnunm2"]
 
 [ext_resource type="FontFile" uid="uid://f77brr674fgy" path="res://assets/font/Alphakind.ttf" id="1_7g0fr"]
-[ext_resource type="Theme" uid="uid://ct5d25lndt33e" path="res://assets/ui.tres" id="2_a8jdk"]
+[ext_resource type="LabelSettings" uid="uid://bxioudgjyrh2h" path="res://assets/TitleSettings.tres" id="1_qupdr"]
+[ext_resource type="StyleBox" uid="uid://vukns3rgtx2m" path="res://assets/new_style_box_flat.tres" id="3_7ulis"]
 [ext_resource type="AudioStream" uid="uid://bnqux0ufq0kv4" path="res://assets/music/Enchanted Journey.mp3" id="3_fb5fv"]
 
 [sub_resource type="GDScript" id="GDScript_hyc8s"]
@@ -23,12 +24,27 @@ func _on_quit_pressed():
 	get_tree().quit()
 "
 
-[sub_resource type="LabelSettings" id="LabelSettings_iuh6d"]
-font = ExtResource("1_7g0fr")
-font_size = 200
-font_color = Color(0.321569, 0.592157, 0.521569, 1)
-outline_size = 30
-outline_color = Color(0.0235294, 0.231373, 0.219608, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_syreg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b4o5h"]
+
+[sub_resource type="Theme" id="Theme_a2h41"]
+default_font = ExtResource("1_7g0fr")
+default_font_size = 100
+Button/colors/font_color = Color(0.835294, 0.376471, 0.65098, 1)
+Button/colors/font_disabled_color = Color(0.756863, 0.768627, 0.819608, 1)
+Button/colors/font_focus_color = Color(0.835294, 0.376471, 0.65098, 1)
+Button/colors/font_hover_color = Color(0.835294, 0.376471, 0.65098, 1)
+Button/colors/font_hover_pressed_color = Color(0.835294, 0.376471, 0.65098, 1)
+Button/colors/font_pressed_color = Color(0.835294, 0.376471, 0.65098, 1)
+Button/constants/outline_size = 29
+Button/font_sizes/font_size = 119
+Button/fonts/font = ExtResource("1_7g0fr")
+Button/styles/disabled = SubResource("StyleBoxEmpty_syreg")
+Button/styles/focus = ExtResource("3_7ulis")
+Button/styles/hover = ExtResource("3_7ulis")
+Button/styles/normal = SubResource("StyleBoxEmpty_b4o5h")
+Button/styles/pressed = ExtResource("3_7ulis")
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -43,29 +59,30 @@ script = SubResource("GDScript_hyc8s")
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-color = Color(0.905882, 0.886275, 0.921569, 1)
+color = Color(0.403922, 0.627451, 0.588235, 1)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = -2.0
-offset_top = 17.0
+offset_left = 1.0
+offset_top = 89.0
 offset_right = 1918.0
-offset_bottom = 426.0
+offset_bottom = 443.0
 text = "Flightless Faeries"
-label_settings = SubResource("LabelSettings_iuh6d")
+label_settings = ExtResource("1_qupdr")
 horizontal_alignment = 1
 justification_flags = 128
 uppercase = true
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_top = 315.0
-offset_right = 1920.0
-offset_bottom = 1080.0
+offset_left = 682.0
+offset_top = 380.0
+offset_right = 1212.0
+offset_bottom = 964.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme = ExtResource("2_a8jdk")
+theme = SubResource("Theme_a2h41")
 alignment = 1
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]

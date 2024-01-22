@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bahs5d3jopan3"]
+
+[node name="Floor" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

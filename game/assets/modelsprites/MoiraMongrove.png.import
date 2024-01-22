@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj7ifw78747r5"
-path="res://.godot/imported/PixityFoxglove.png-3e22c8c28073fc7b647035fa3049c5ec.ctex"
+uid="uid://bd5lm5pgd7csy"
+path="res://.godot/imported/MoiraMongrove.png-5b3947f4fe37ecd278574fbba3070b6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PixityFoxglove.png"
-dest_files=["res://.godot/imported/PixityFoxglove.png-3e22c8c28073fc7b647035fa3049c5ec.ctex"]
+source_file="res://assets/modelsprites/MoiraMongrove.png"
+dest_files=["res://.godot/imported/MoiraMongrove.png-5b3947f4fe37ecd278574fbba3070b6b.ctex"]
 
 [params]
 

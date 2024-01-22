@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://djuatrov4ws4v"]
+[gd_scene load_steps=4 format=3 uid="uid://djuatrov4ws4v"]
 
 [ext_resource type="PackedScene" uid="uid://coopmfh1typyy" path="res://scenes/player.tscn" id="1_6sj3s"]
+[ext_resource type="PackedScene" uid="uid://c7hlq5amwtt01" path="res://scenes/background.tscn" id="2_wiwhe"]
+[ext_resource type="PackedScene" uid="uid://bahs5d3jopan3" path="res://scenes/floor.tscn" id="3_jn1ah"]
 
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_6sj3s")]
+
+[node name="Background" parent="Player" instance=ExtResource("2_wiwhe")]
+
+[node name="Floor" parent="Player" instance=ExtResource("3_jn1ah")]
