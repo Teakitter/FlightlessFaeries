@@ -12,3 +12,6 @@
 position = Vector2(70, 767)
 
 [node name="Background" parent="." instance=ExtResource("3_ua0fx")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 520)
