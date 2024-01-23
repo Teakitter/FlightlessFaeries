@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const GRAVITY : int = 4200
+const GRAVITY : int = 150
 const JUMP_SPEED : int = -1800
 
 # Called every frame.
