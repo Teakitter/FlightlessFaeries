@@ -7,11 +7,13 @@
 [node name="Background" type="ParallaxBackground"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0.305882, 0.478431, 0.419608, 1)
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+position = Vector2(0, -18)
 motion_scale = Vector2(0.1, 1)
 motion_mirroring = Vector2(1920, 0)
 
@@ -21,6 +23,7 @@ texture = ExtResource("1_1q50b")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+position = Vector2(0, -18)
 motion_scale = Vector2(0.2, 1)
 motion_mirroring = Vector2(1920, 0)
 
@@ -30,6 +33,7 @@ texture = ExtResource("2_0tqik")
 centered = false
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(-6, -21)
 motion_scale = Vector2(0.3, 1)
 motion_mirroring = Vector2(1920, 0)
 
