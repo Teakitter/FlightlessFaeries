@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://coopmfh1typyy"]
 
-[ext_resource type="Texture2D" path="res://assets/modelsprites/MoiraMongrove.png" id="1_6b0dh"]
+[ext_resource type="Texture2D" uid="uid://bfprye5yl1x1r" path="res://assets/modelsprites/Pixity Foxglove.png" id="1_6b0dh"]
 [ext_resource type="Script" path="res://script/player.gd" id="1_juul2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i6xxk"]
