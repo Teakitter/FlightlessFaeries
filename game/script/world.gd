@@ -7,7 +7,7 @@ var score : int
 var game_running : bool
 
 const SCORE_MODIFIER : int = 100
-const PLAYER_START_POS := Vector2i(70, 667)
+const PLAYER_START_POS := Vector2i(232, 768)
 const CAM_START_POS := Vector2i(960, 520)
 const START_SPEED : float = 1
 const MAX_SPEED : int = 25
