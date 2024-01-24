@@ -2,10 +2,12 @@
 
 Thank you to everyone who provides the resources used in this game.
 
-## Music
+## Audio
 
 - [Enchanted Journey] (https://incompetech.com/music/royalty-free/music.html) by Kevin MacLeod.
 	- [Licensed under Creative Commons: By Attribution 3.0] (http://creativecommons.org/licenses/by/3.0/)
+- [CLICK_94.wav] / ButtonClick.wav by Jaszuino15
+	- [Licensed under Creative Commons CC0] (https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Font
 
