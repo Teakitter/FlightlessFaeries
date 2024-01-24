@@ -1,26 +1,33 @@
-[gd_scene load_steps=9 format=3 uid="uid://cyogwhvrnunm2"]
+[gd_scene load_steps=10 format=3 uid="uid://cyogwhvrnunm2"]
 
 [ext_resource type="FontFile" uid="uid://f77brr674fgy" path="res://assets/font/Alphakind.ttf" id="1_7g0fr"]
 [ext_resource type="LabelSettings" uid="uid://bxioudgjyrh2h" path="res://assets/TitleSettings.tres" id="1_qupdr"]
 [ext_resource type="StyleBox" uid="uid://vukns3rgtx2m" path="res://assets/new_style_box_flat.tres" id="3_7ulis"]
-[ext_resource type="AudioStream" uid="uid://bnqux0ufq0kv4" path="res://assets/music/Enchanted Journey.mp3" id="3_fb5fv"]
+[ext_resource type="AudioStream" uid="uid://bnqux0ufq0kv4" path="res://assets/audio/Enchanted Journey.mp3" id="4_0e3wo"]
+[ext_resource type="AudioStream" uid="uid://cpqquu0tri1b2" path="res://assets/audio/ButtonClick.wav" id="5_lqqjh"]
 
 [sub_resource type="GDScript" id="GDScript_hyc8s"]
 script/source = "extends Control
 
 func _on_play_pressed():
+	$SoundPress.play()
+	await $SoundPress.finished
 	get_tree().change_scene_to_file(\"res://scenes/world.tscn\")
 
 
 func _on_options_pressed():
+	$SoundPress.play()
+	await $SoundPress.finished
 	pass # Replace with function body.
-
 
 func _on_statistics_pressed():
+	$SoundPress.play()
+	await $SoundPress.finished
 	pass # Replace with function body.
 
-
 func _on_quit_pressed():
+	$SoundPress.play()
+	await $SoundPress.finished
 	get_tree().quit()
 "
 
@@ -104,9 +111,12 @@ layout_mode = 2
 text = "Quit"
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_fb5fv")
+stream = ExtResource("4_0e3wo")
 volume_db = -12.037
 autoplay = true
+
+[node name="SoundPress" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_lqqjh")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
