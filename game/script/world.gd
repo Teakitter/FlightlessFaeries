@@ -15,6 +15,7 @@ const MAX_SPEED : int = 25
 func _ready():
 	screen_size = get_window().size
 	new_game()
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func new_game():
 	distance = 0
