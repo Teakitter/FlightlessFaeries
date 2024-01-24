@@ -18,7 +18,7 @@ boot_splash/bg_color=Color(0.403922, 0.627451, 0.588235, 1)
 boot_splash/image="res://assets/images/TitleImage.png"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
-config/icon="res://icon.svg"
+config/icon="res://assets/images/icon.png"
 
 [autoload]
 
