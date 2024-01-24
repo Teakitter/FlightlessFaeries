@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bfprye5yl1x1r" path="res://assets/modelsprites/Pixity Foxglove.png" id="1_6b0dh"]
 [ext_resource type="Script" path="res://script/player.gd" id="1_juul2"]
-[ext_resource type="AudioStream" uid="uid://b8mx5dnc5ui23" path="res://assets/audio/SoundGrassRun.wav" id="3_c4p1d"]
+[ext_resource type="AudioStream" uid="uid://c3itrmasptdiw" path="res://assets/audio/SoundGrassRun.wav" id="3_c4p1d"]
 [ext_resource type="AudioStream" uid="uid://fsxc77hpu4c0" path="res://assets/audio/JumpSound.wav" id="4_7mt0a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i6xxk"]
