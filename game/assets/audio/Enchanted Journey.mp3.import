@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bnqux0ufq0kv4"
-path="res://.godot/imported/Enchanted Journey.mp3-ae23699accee4d02b1c874e30e3cdcec.mp3str"
+path="res://.godot/imported/Enchanted Journey.mp3-fa3676cee88c8c02e37d12234217eb6e.mp3str"
 
 [deps]
 
-source_file="res://assets/music/Enchanted Journey.mp3"
-dest_files=["res://.godot/imported/Enchanted Journey.mp3-ae23699accee4d02b1c874e30e3cdcec.mp3str"]
+source_file="res://assets/audio/Enchanted Journey.mp3"
+dest_files=["res://.godot/imported/Enchanted Journey.mp3-fa3676cee88c8c02e37d12234217eb6e.mp3str"]
 
 [params]
 
