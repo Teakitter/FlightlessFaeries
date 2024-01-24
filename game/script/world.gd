@@ -6,12 +6,14 @@ var speed : float
 var distance : int
 var game_running : bool
 
+# game constants - don't change
 const DISTANCE_MODIFIER : int = 100
 const PLAYER_START_POS := Vector2i(221, 904)
 const CAM_START_POS := Vector2i(960, 520)
 const START_SPEED : float = 1
 const MAX_SPEED : int = 25
-	
+
+
 func _ready():
 	screen_size = get_window().size
 	new_game()
@@ -51,3 +53,9 @@ func _process(delta):
 
 func show_distance():
 	$HUD.get_node("DistanceLabel").text = "DISTANCE: " + str(distance / DISTANCE_MODIFIER)
+
+# adding to global statistics
+signal update_JumpStatistic
+func update_jump():
+	if Input.is_action_pressed("jump"):
+		update_JumpStatistic.emit()

@@ -9,6 +9,7 @@
 [sub_resource type="GDScript" id="GDScript_hyc8s"]
 script/source = "extends Control
 
+
 func _on_play_pressed():
 	$SoundPress.play()
 	await $SoundPress.finished
@@ -23,7 +24,7 @@ func _on_options_pressed():
 func _on_statistics_pressed():
 	$SoundPress.play()
 	await $SoundPress.finished
-	pass # Replace with function body.
+	get_tree().change_scene_to_file(\"res://scenes/statistics.tscn\")
 
 func _on_quit_pressed():
 	$SoundPress.play()
@@ -103,7 +104,6 @@ text = "Options"
 
 [node name="Statistics" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-disabled = true
 text = "Statistics"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
