@@ -20,10 +20,6 @@ boot_splash/fullsize=false
 boot_splash/use_filter=false
 config/icon="res://assets/images/icon.png"
 
-[autoload]
-
-Global="*res://script/global.gd"
-
 [display]
 
 window/size/viewport_width=1920
