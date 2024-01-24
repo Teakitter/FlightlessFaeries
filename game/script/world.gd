@@ -3,10 +3,10 @@ extends Node
 # game variables
 var screen_size : Vector2i
 var speed : float
-var score : int
+var distance : int
 var game_running : bool
 
-const SCORE_MODIFIER : int = 100
+const DISTANCE_MODIFIER : int = 100
 const PLAYER_START_POS := Vector2i(221, 904)
 const CAM_START_POS := Vector2i(960, 520)
 const START_SPEED : float = 1
@@ -17,8 +17,8 @@ func _ready():
 	new_game()
 
 func new_game():
-	score = 0
-	show_score()
+	distance = 0
+	show_distance()
 	# reset the nodes
 	$Player.position = PLAYER_START_POS
 	$Player.velocity = Vector2i(0, 0)
@@ -37,8 +37,8 @@ func _process(delta):
 		$Camera2D.position.x += speed
 		
 		# update score
-		score += speed
-		show_score()
+		distance += speed
+		show_distance()
 		
 		# update ground position
 		if $Camera2D.position.x - $Floor.position.x > screen_size.x * 1.5:
@@ -48,5 +48,5 @@ func _process(delta):
 			game_running = true
 			$HUD.get_node("PressToPlayLabel").hide()
 
-func show_score():
-	$HUD.get_node("ScoreLabel").text = "SCORE: " + str(score / SCORE_MODIFIER)
+func show_distance():
+	$HUD.get_node("DistanceLabel").text = "DISTANCE: " + str(distance / DISTANCE_MODIFIER)
