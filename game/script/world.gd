@@ -53,9 +53,3 @@ func _process(delta):
 
 func show_distance():
 	$HUD.get_node("DistanceLabel").text = "DISTANCE: " + str(distance / DISTANCE_MODIFIER)
-
-# adding to global statistics
-signal update_JumpStatistic
-func update_jump():
-	if Input.is_action_pressed("jump"):
-		update_JumpStatistic.emit()
