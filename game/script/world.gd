@@ -12,6 +12,7 @@ const PLAYER_START_POS := Vector2i(221, 904)
 const CAM_START_POS := Vector2i(960, 520)
 const START_SPEED : float = 1
 const MAX_SPEED : int = 25
+const SPEED_MODIFIER : int = 10000
 
 
 func _ready():
@@ -33,7 +34,9 @@ func new_game():
 
 func _process(delta):
 	if game_running:
-		speed = START_SPEED
+		speed = START_SPEED + distance / SPEED_MODIFIER
+		if speed > MAX_SPEED:
+			speed = MAX_SPEED
 		
 		# move dino and camera
 		$Player.position.x += speed
