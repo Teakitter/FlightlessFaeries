@@ -4,13 +4,13 @@ const GRAVITY : int = 150
 const JUMP_SPEED : int = -1800
 
 func _physics_process(delta):
-
 	velocity.y += GRAVITY + delta
+	
 	if is_on_floor():
 		if Input.is_action_pressed("jump"):
+			$SoundJump.play()
 			velocity.y = JUMP_SPEED
-			if is_on_floor() == false:
-				$JumpSound.play()
+		
 		#elif Input.is_action_pressed("duck"):
 			#$AnimatedSprite2D.play("duck")
 	else:
