@@ -27,3 +27,5 @@ stream = ExtResource("3_c4p1d")
 [node name="SoundJump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_7mt0a")
 volume_db = -29.966
+
+[connection signal="finished" from="SoundJump" to="." method="_on_sound_jump_finished"]
