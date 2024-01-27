@@ -45,6 +45,7 @@ func _process(delta):
 		# update score
 		distance += speed
 		show_distance()
+		print(speed)
 		
 		# update ground position
 		if $Camera2D.position.x - $Floor.position.x > screen_size.x * 1.5:
